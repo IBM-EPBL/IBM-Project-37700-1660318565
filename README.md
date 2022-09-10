@@ -3,6 +3,7 @@ University Admit Eligibility Predictor
 
 ### Activity
 - Empathy Map Canvas submitted by Our team
+- Problem Statement Uploaded by Our team
 
 ### Our team
 - Ajith N
