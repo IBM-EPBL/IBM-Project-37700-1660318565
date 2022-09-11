@@ -1,7 +1,8 @@
 # IBM-Project-37700-1660318565
 University Admit Eligibility Predictor
 
-### Activity
+## Activities
+- Literature Survey submitted by our team
 - Empathy Map Canvas submitted by Our team
 - Problem Statement Uploaded by Our team
 
