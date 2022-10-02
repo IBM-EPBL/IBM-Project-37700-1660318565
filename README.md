@@ -32,3 +32,5 @@ Students are often worried about their chances of admission to University. The a
 ## PROJECT DESIGN PHASE 1
 
 - [x] Proposed Solution [Click me](https://github.com/IBM-EPBL/IBM-Project-37700-1660318565/blob/main/Project%20Design%20&%20Planning/Project%20Design%20Phase%201/Proposed%20Solution.pdf)
+- [x] Problem Solution Fit [Click me](https://github.com/IBM-EPBL/IBM-Project-37700-1660318565/blob/main/Project%20Design%20%26%20Planning/Project%20Design%20Phase%201/Solution%20Fit.pdf)
+- [x] Solution Architecture [Click me](https://github.com/IBM-EPBL/IBM-Project-37700-1660318565/blob/main/Project%20Design%20%26%20Planning/Project%20Design%20Phase%201/Solution_Architecture.pdf)
