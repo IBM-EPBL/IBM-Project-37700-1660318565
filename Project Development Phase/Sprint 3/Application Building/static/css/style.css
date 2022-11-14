@@ -1,0 +1,63 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Poppins",sans-serif;    
+}
+.Nav-bar{
+    opacity: 1;
+    position: fixed;   
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.scrolled{
+    background-color:  rgba(145, 2, 2, 0.824);
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.Nav-bar .nav-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.Nav-bar .nav-container h3{
+    margin-left: 20px;
+    color: #111;
+    font-size: 32px;
+    border: none;
+}
+.Nav-bar .nav-container .nav-content{
+    display: block;
+    padding: 20px 18px;
+    margin-right: 20px;
+}
+.Nav-bar .nav-container .nav-content ul li{
+    display: inline;
+    padding-left: 10px;
+}
+.Nav-bar .nav-container .nav-content ul li a{
+    color:aqua;
+    padding-bottom: 5px;
+}
+.Nav-bar .nav-container .nav-content ul li a:active{
+    border-bottom: 2px solid blue;
+    color:blue;
+}
+.Nav-bar .nav-container .nav-content ul li a:hover{
+    border-bottom: 2px solid green;
+    color:green;
+    text-decoration: none;
+}
+
+
+
