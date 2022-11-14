@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="/static/js/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAEP</title>
+    <link rel="stylesheet" href="/static/css/login-style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="shortcut jpeg" href="" type="image/jpeg">
+    <script src="/static/js/script.js"></script>
+    <script src="/static/js/jquery.min.js"></script>
+</head>
+<body>
+    <div class="nav-bar nav-bar-content">
+        <div class="nav-container">
+            <a href="/templates/index.html" id="mainheading">
+                <h3>
+                    <span class="U">U</span>
+                    <span class="A">A</span>
+                    <span class="E">E</span>
+                    <span class="P">P</span>
+                </h3>
+            </a>
+            <div class="nav-content">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/register">Sign-In</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="home-content">
+        <p style="display: none;">
+            sdjfhsdf 
+        </p>
+    </div> -->
+    <div class="sign-in">
+        <h3 class="sign-in-heading">
+            Create a new account 
+        </h3>
+        <div class="form-container">
+            <form action="/register" method="POST" autocomplete="off">
+                <input type="text" name="username" id="username" placeholder="Username">
+                <input type="text" name="mail" id="mail" placeholder="Email">
+                <input type="password" name="password" id="password" placeholder="password">
+                <input type="password" name="confirm-password" id="confirm-password" placeholder="confirm-password">
+                <input type="submit" value="Sign Up" id="btn-login">
+            </form>
+            <p id="warning_msg">{{msg}}*</p>
+            <p id="btn-signup">
+                Already a member? Go to <a href="/loginpage">Sign In</a> 
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        $('#warning_msg').hide(3000);
+    });
+</script>
