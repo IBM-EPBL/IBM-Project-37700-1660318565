@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAEP</title>
+    <link rel="stylesheet" href="/static/css/login-style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="shortcut jpeg" href="" type="image/jpeg">
+    <script src="/static/js/script.js"></script>
+    <script src="/static/js/jquery.min.js"></script>
+</head>
+<body>
+    <div class="nav-bar nav-bar-content">
+        <div class="nav-container">
+            <a href="/templates/index.html" id="mainheading">
+                <h3>
+                    <span class="U">U</span>
+                    <span class="A">A</span>
+                    <span class="E">E</span>
+                    <span class="P">P</span>
+                </h3>
+            </a>
+            <div class="nav-content">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">{{username}}</a></li>
+                    <li><a href="/logout">{{logout}}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="home-content">
+        <p style="display: none;">
+            sdjfhsdf 
+        </p>
+    </div>
+    <div class="sign-in">
+        <h3 class="sign-in-heading">
+            Predict Your Eligible
+        </h3>
+        <div class="form-container">
+            <form action="/predict" method="POST" autocomplete="off">
+                <input type="number" name="gre" id="username" min="130" max="340" placeholder="Enter your GRE( Out of 340)">
+                <input type="number" name="toefl" id="username"  min="0" max="120" placeholder="Enter your TOEFL(Out of 120)">
+                <input type="number" name="rating" step="0.1" min='1' max='5' id="confirm-password" min="1" max="5"  placeholder="Enter your university rating">
+                <input type="number" name="sop" step="0.1" id="mail" min="1" max="5" placeholder="Enter your SOP(1-5)">
+                <input type="number" name="lor" step="0.1" id="password" min="1" max="5" placeholder="Enter your LOR(1-5)">
+                <input type="number" name="cgpa" step="0.01" id="confirm-password" min='1' max='10' placeholder="Enter your CGPA(Out of 10)">
+                <select name="researchs" id="researchs">
+                    <option value="Select any one">Select any one</option>
+                    <option value="Research">Research</option>
+                    <option value="No Research">No Research</option>
+                </select>
+                <select name="models" id="researchs">
+                    <option value="Select any one">Select any one</option>
+                    <option value="naivebayes">Linear SVC Classifier Algorithm(94% accuracy)</option>
+                    <option value="linear">Linear Regression Algorithm(82%accuracy)</option>
+                </select>
+                
+                <input type="submit" value="Predict" id="btn-login">
+            </form>
+            <p id="warning_msg">{{msg}}</p>
+            <p id="btn-signup">
+                 Go to <a href="/">Home</a> 
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        $('#warning_msg').hide(5000);
+    });
+</script>
